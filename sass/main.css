@@ -123,7 +123,13 @@ hr {
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .footer {
-    height: 8vh;
+    height: 15vh;
+  }
+}
+
+@media (min-width: 315px) and (max-width: 700px) {
+  .footer {
+    height: 15vh;
   }
 }
 
@@ -135,7 +141,7 @@ hr {
           transform: translate(-50%, -50%);
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (min-width: 315px) and (max-width: 700px) {
   .footer p {
     -webkit-transform: translate(-46%, -7.5em);
             transform: translate(-46%, -7.5em);
@@ -143,6 +149,15 @@ hr {
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .footer p {
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@media (min-width: 315px) and (max-width: 700px) {
   .footer p {
     top: 0;
     left: 0;
@@ -186,6 +201,12 @@ nav .navbar {
   }
 }
 
+@media (min-width: 315px) and (max-width: 700px) {
+  nav .navbar a {
+    font-size: 1em;
+  }
+}
+
 nav .nav-item {
   list-style: none;
 }
@@ -226,7 +247,7 @@ nav .nav-item .nav-link:hover {
   text-align: center;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (min-width: 315px) and (max-width: 700px) {
   .header .bio {
     -webkit-transform: translate(-46%, -7.5em);
             transform: translate(-46%, -7.5em);
@@ -243,6 +264,12 @@ nav .nav-item .nav-link:hover {
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .header .bio-name {
     font-size: 3.2em;
+  }
+}
+
+@media (min-width: 315px) and (max-width: 700px) {
+  .header .bio-name {
+    font-size: 3em;
   }
 }
 
@@ -277,6 +304,19 @@ nav .nav-item .nav-link:hover {
   }
 }
 
+@media (min-width: 315px) and (max-width: 700px) {
+  .about {
+    padding: 2em;
+  }
+  .about h1 {
+    font-size: 2.5em;
+  }
+  .about p {
+    font-size: 1.2em;
+    padding-bottom: 2em;
+  }
+}
+
 .projects p {
   padding-bottom: 9rem;
 }
@@ -295,6 +335,19 @@ nav .nav-item .nav-link:hover {
   .projects p {
     font-size: 1.2em;
     padding-bottom: 4em;
+  }
+}
+
+@media (min-width: 315px) and (max-width: 700px) {
+  .projects {
+    padding: 2em;
+  }
+  .projects h1 {
+    font-size: 2.5em;
+  }
+  .projects p {
+    font-size: 1.2em;
+    padding-bottom: 2em;
   }
 }
 
@@ -317,12 +370,25 @@ nav .nav-item .nav-link:hover {
   }
 }
 
+@media (min-width: 315px) and (max-width: 700px) {
+  .projects .project-1 {
+    display: inline-block;
+    text-align: center;
+  }
+}
+
 .projects .project-1 .img-1 img {
   width: 90%;
   background-size: cover;
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .projects .project-1 .img-1 {
+    display: none;
+  }
+}
+
+@media (min-width: 315px) and (max-width: 700px) {
   .projects .project-1 .img-1 {
     display: none;
   }
@@ -337,6 +403,16 @@ nav .nav-item .nav-link:hover {
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .projects .project-1 .project-name-1 a {
+    display: block;
+    font-size: 3em;
+  }
+  .projects .project-1 .project-name-1 h1 {
+    display: none;
+  }
+}
+
+@media (min-width: 315px) and (max-width: 700px) {
   .projects .project-1 .project-name-1 a {
     display: block;
     font-size: 3em;
@@ -368,6 +444,12 @@ nav .nav-item .nav-link:hover {
   }
 }
 
+@media (min-width: 315px) and (max-width: 700px) {
+  .projects .project-2 .img-2 {
+    display: none;
+  }
+}
+
 .projects .project-2 .project-name-2 h1 {
   font-size: 2.7rem;
 }
@@ -377,6 +459,17 @@ nav .nav-item .nav-link:hover {
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .projects .project-2 .project-name-2 a {
+    display: block;
+    font-size: 3em;
+    text-align: center;
+  }
+  .projects .project-2 .project-name-2 h1 {
+    display: none;
+  }
+}
+
+@media (min-width: 315px) and (max-width: 700px) {
   .projects .project-2 .project-name-2 a {
     display: block;
     font-size: 3em;
@@ -397,12 +490,27 @@ nav .nav-item .nav-link:hover {
   }
 }
 
+@media (min-width: 315px) and (max-width: 700px) {
+  .contact {
+    position: relative;
+  }
+}
+
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .contact .contact-section {
     text-align: center;
     position: absolute;
     -webkit-transform: translate(-60%, -30%);
             transform: translate(-60%, -30%);
+  }
+}
+
+@media (min-width: 315px) and (max-width: 700px) {
+  .contact .contact-section {
+    text-align: center;
+    position: absolute;
+    -webkit-transform: translate(-71%, -30%);
+            transform: translate(-71%, -30%);
   }
 }
 
@@ -424,7 +532,19 @@ nav .nav-item .nav-link:hover {
   }
 }
 
+@media (min-width: 315px) and (max-width: 700px) {
+  .contact .contact-section form .form-input {
+    width: 75%;
+  }
+}
+
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .contact .contact-section h1 {
+    font-size: 2.7em;
+  }
+}
+
+@media (min-width: 315px) and (max-width: 700px) {
   .contact .contact-section h1 {
     font-size: 2.7em;
   }
@@ -461,6 +581,13 @@ nav .nav-item .nav-link:hover {
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .button {
+    width: 75%;
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 315px) and (max-width: 700px) {
   .button {
     width: 75%;
     margin-bottom: 1em;
