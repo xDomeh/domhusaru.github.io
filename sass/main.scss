@@ -184,6 +184,7 @@ nav {
     }
 
     @include resp(phone) {
+      width: 100%;
       a {
         font-size: 1em;
       }
