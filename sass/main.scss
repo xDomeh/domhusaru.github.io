@@ -1,0 +1,260 @@
+//Variables
+$primary: #5d5d5d;
+
+$green-1: #1fab89;
+$green-2: #64e291;
+$green-3: #27aa80;
+
+//Utilites
+.pb {
+  padding-bottom: 2rem;
+}
+
+.pt {
+  padding-top: 2rem;
+}
+
+.space {
+  padding: 15rem;
+}
+
+//Mixins
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//Keyframes
+
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  75% {
+    transform: translateX(1.3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  75% {
+    transform: translateX(-1.3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+//Code
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  background-image: linear-gradient(to bottom left, $green-1, $green-2);
+}
+
+p {
+  font-weight: 100;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+hr {
+  border: 1px solid $primary;
+  width: 75%;
+  margin: 0 auto;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 3rem;
+  text-align: center;
+
+  .form-input {
+    width: 100%;
+  }
+}
+
+footer {
+  position: relative;
+  height: 15vh;
+  background-color: $primary;
+
+  p {
+    @include center;
+  }
+}
+
+nav {
+  width: 75%;
+
+  .navbar {
+    z-index: 2;
+    box-shadow: 0 10px 15px $primary;
+    position: fixed;
+    background-color: $green-2;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .nav-item {
+    list-style: none;
+
+    .nav-link {
+      text-decoration: none;
+      color: black;
+      transition: all 0.2s;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.header {
+  z-index: -1;
+  height: 100vh;
+  background-image: url(../img/Code.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .bio {
+    @include center;
+
+    color: #fff;
+    text-align: center;
+
+    &-name {
+      font-size: 3.7rem;
+      padding-bottom: 2rem;
+      animation: moveLeft 1s;
+    }
+
+    &-work {
+      font-size: 2rem;
+      letter-spacing: 1rem;
+      animation: moveRight 1s;
+    }
+  }
+}
+
+.about {
+  .p-2 {
+    font-size: 1.3rem;
+    font-weight: 100;
+  }
+}
+
+.projects {
+  p {
+    padding-bottom: 9rem;
+  }
+
+  a,
+  h1 {
+    color: #fff;
+  }
+
+  .project-1 {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding-bottom: 4rem;
+    position: relative;
+
+    .img-1 {
+      width: 35%;
+      img {
+        width: 100%;
+        background-size: cover;
+      }
+    }
+
+    .project-name-1 {
+      width: 50%;
+      h1 {
+        font-size: 2.7rem;
+      }
+    }
+  }
+
+  .project-2 {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding-bottom: 4rem;
+
+    .img-2 {
+      width: 35%;
+      img {
+        width: 100%;
+        background-size: cover;
+      }
+    }
+
+    .project-name-2 {
+      width: 50%;
+      h1 {
+        font-size: 2.7rem;
+      }
+    }
+  }
+}
+
+.button {
+  margin: 0 auto;
+  display: block;
+  padding: 1rem;
+  width: 38%;
+  margin-top: 3rem;
+  border-radius: 100px;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+    background-color: $green-3;
+    box-shadow: 0 10px 15px $primary;
+    transform: translateY(-0.5rem);
+    opacity: 0.8;
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+}
